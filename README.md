@@ -1,5 +1,4 @@
 # EjemplosAndroid
-#  Android Exercises Playground
 
 ¡Bienvenido a mi repositorio de prácticas de Android! 
 
