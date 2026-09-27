@@ -58,7 +58,7 @@ class QuoteViewModel @Inject constructor(
             if (currentQuote != null) {
                 //postValue es un método que se utiliza en Android para actualizar el valor de un LiveData
                 // o MutableLiveData desde un hilo secundario (Background Thread) de forma segura.
-                quoteModel.postValue(currentQuote)
+                quoteModel.postValue(currentQuote!!)
             }
 
 
