@@ -6,6 +6,7 @@ import android.os.Bundle
 import com.example.poo_1.dataStrorePreferences.MainDataStoreActivity
 import com.example.poo_1.databinding.ActivityMainBinding
 import com.example.poo_1.datePicker.DateTimePickerActivity
+import com.example.poo_1.flows.ui.MainFlowsActivity
 import com.example.poo_1.fragments.FragmentsActivity
 import com.example.poo_1.fragments2.MainFragmentActivity
 import com.example.poo_1.imagePicker.MainImageActivity
@@ -39,7 +40,12 @@ class MainActivity : AppCompatActivity() {
         binding.btnDataStore.setOnClickListener { navigateToDataStoreApp() }
         binding.btnPickImage.setOnClickListener { navigateToPickImage() }
         binding.btnFragments2.setOnClickListener { navigateToFragments2App() }
+        binding.btnFlows.setOnClickListener { navigateToFlowsApp() }
 
+    }
+
+    private fun navigateToFlowsApp() {
+        startActivity (Intent(this, MainFlowsActivity::class.java))
     }
 
     private fun navigateToFragments2App() {

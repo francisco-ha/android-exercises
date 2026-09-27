@@ -101,7 +101,7 @@ dependencies {
     implementation("com.journeyapps:zxing-android-embedded:4.1.0")
 
     /*Implementacion de ViewModel*/
-    //implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1")
+    //implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
     /*Implementacion de LiveData*/
     //implementation("androidx.lifecycle:lifedata-viewmodel-ktx:2.3.1")
 
