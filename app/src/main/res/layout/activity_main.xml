@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="26dp"
+    tools:context=".MainActivity">
+
+
+    <!--View
+        android:id="@+id/rectangulo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="#FF0000" />
+
+    <Button
+        android:id="@+id/buttonArriba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arriba"
+        android:layout_below="@id/rectangulo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/buttonAbajo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abajo"
+        android:layout_below="@id/buttonArriba"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/buttonIzquierda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Izquierda"
+        android:layout_below="@id/rectangulo"
+        android:layout_toStartOf="@id/buttonArriba"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/buttonDerecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rectangulo"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/buttonArriba"
+        android:text="Derecha" />
+    <Button
+        android:id="@+id/buttonCambiarTamano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cambiar Tamaño"
+        android:layout_below="@id/buttonAbajo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/buttonCambiarColor"
+        android:layout_width="wrap_content"
+        android:layout_height="35sp"
+        android:layout_below="@id/buttonCambiarTamano"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Cambiar Color" />
+    <Button
+        android:id="@+id/buttonCambiarColorBorde"
+        android:layout_width="wrap_content"
+        android:layout_height="35sp"
+        android:text="Cambiar Color Borde"
+        android:layout_below="@id/buttonCambiarColor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/-->
+
+    <Button
+        android:id="@+id/btnReciclerView"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:background="@color/purple_200"
+        android:text="IR a recicler view"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+
+        />
+    <Button
+        android:id="@+id/btnSuperHero"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:background="@color/purple_200"
+        android:text="IR a super hero app"
+        android:layout_below="@id/btnReciclerView"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        />
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:background="@color/purple_200"
+        android:text="IR a Settings"
+        android:layout_below="@id/btnSuperHero"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        />
+
+    <Button
+        android:id="@+id/btnSharedPreferences"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:padding="0sp"
+        android:background="@color/purple_200"
+        android:text="IR a SharedPreferences"
+        android:layout_below="@id/btnSettings"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        />
+    <Button
+        android:id="@+id/btnPermissions"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:background="@color/purple_200"
+        android:text="IR a PERMISSIONS"
+        android:layout_below="@id/btnSharedPreferences"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        />
+
+    <Button
+        android:id="@+id/btnDateTimePicker"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:background="@color/purple_200"
+        android:text="IR a DateTimePicker"
+        android:layout_below="@id/btnPermissions"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        />
+    <Button
+        android:id="@+id/btnScanCode"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:background="@color/purple_200"
+        android:text="IR a ScanCode"
+        android:layout_below="@id/btnDateTimePicker"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        />
+
+    <Button
+        android:id="@+id/btnFragments"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:background="@color/purple_200"
+        android:text="IR a Fragments"
+        android:layout_below="@id/btnScanCode"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        />
+    <Button
+        android:id="@+id/btnMVVM"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:background="@color/purple_200"
+        android:text="IR a MVVM"
+        android:layout_below="@id/btnFragments"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        />
+    <Button
+        android:id="@+id/btnDataStore"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:background="@color/purple_200"
+        android:text="IR a DataStore"
+        android:layout_below="@id/btnFragments"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        />
+    <Button
+        android:id="@+id/btnPickImage"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:background="@color/purple_200"
+        android:text="pick image"
+        android:layout_below="@id/btnDataStore"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        />
+    <Button
+        android:id="@+id/btnFragments2"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:background="@color/purple_200"
+        android:text="Fragments 2"
+        android:layout_below="@id/btnPickImage"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        />
+
+</RelativeLayout>

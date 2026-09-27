@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/btnRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="8dp"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/pink"
+        android:text="Fragment rojo" />
+    <Button
+        android:id="@+id/btnBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/blue"
+        android:text="Fragment azul" />
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
+
+<!--LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="horizontal"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+<fragment android:name="com.cursokotlin.fragmentexample.RedFragment"
+    android:id="@+id/first"
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="match_parent" />
+<fragment android:name="com.cursokotlin.fragmentexample.BlueFragment"
+    android:id="@+id/second"
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="match_parent" />
+</LinearLayout-->
