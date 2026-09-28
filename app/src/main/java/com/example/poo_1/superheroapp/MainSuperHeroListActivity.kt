@@ -132,6 +132,14 @@ class MainSuperHeroListActivity : AppCompatActivity() {
                 if (response != null) {
                     Log.i("API_INFO", response.toString())
                     runOnUiThread {
+                        /*
+                            En caso de agregar un nuevo personaje manualmente:
+                            // Esto crea una LISTA NUEVA en memoria
+                            val listaNueva = listaAnterior + nuevoPersonaje
+                            miLista = miLista.plus(personaje)
+                            ///usar  miLista.minus(personaje) en ves de remove(it) para eliminar
+                            superHeroAdapter.updateListWithDiffUtil(response.personajes)
+                         */
                         superHeroAdapter.updateList(response.personajes)
                         // Pasa al hilo principal para modificar la pantalla de forma segura y evitar que la app explote
                         binding.progressBar.isVisible = false

@@ -2,6 +2,7 @@ package com.example.poo_1.superheroapp
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.poo_1.R
 /*
@@ -54,6 +55,12 @@ class SuperHeroAdapter(
     fun updateList(superHeroList: List<characterRMItemResponse>){
         this.superHeroList = superHeroList
         notifyDataSetChanged()
+    }
+    fun updateListWithDiffUtil(newList: List<characterRMItemResponse>){
+        val superHeroDiff = SuperHeroDiffUtil(superHeroList,newList)
+        val result = DiffUtil.calculateDiff(superHeroDiff)
+        this.superHeroList = newList
+        result.dispatchUpdatesTo(this)
     }
 
 
