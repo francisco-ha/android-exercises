@@ -224,5 +224,16 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         />
+    <Button
+        android:id="@+id/btnGetUserLocation"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:background="@color/purple_200"
+        android:text="Get User Location"
+        android:layout_below="@id/btnFlows"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        />
 
 </RelativeLayout>
