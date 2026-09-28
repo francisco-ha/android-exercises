@@ -193,4 +193,39 @@ class MainSuperHeroListActivity : AppCompatActivity() {
             }
         }
      */
+
+
+
+    /*
+    fun waitForCoroutines() {
+    lifecycleScope.launch(Dispatchers.IO) {
+
+        // 1. Metemos los diferentes parámetros en una lista ordenada
+        val consultas = listOf("a", "b", "c", "d")
+
+        // 2. Mapeamos de forma dinámica cada letra a una tarea 'async'
+        val deferreds = consultas.map { letra ->
+            async { retrofit.getSuperheroes(letra) }
+        }
+
+        // 3. Esperamos todas de golpe simultáneamente
+        val respuestas = deferreds.awaitAll()
+
+        // 4. Así recuperas cada una de forma equivalente por su posición
+        val response = respuestas[0]
+        val response2 = respuestas[1]
+        val response3 = respuestas[2]
+        val response4 = respuestas[3]
+
+    }
+
+        // Generamos una lista de 9 tareas de forma dinámica y automática
+        val deferreds: List<Deferred<Response<SuperHeroDataResponse>>> = (1..9).map {
+            async { retrofit.getSuperheroes("a") }
+        }
+
+        // Esperamos el resultado de las 9 peticiones en paralelo
+        val response: List<Response<SuperHeroDataResponse>> = deferreds.awaitAll()
+    }
+     */
 }
