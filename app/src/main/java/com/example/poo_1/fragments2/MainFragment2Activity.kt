@@ -4,25 +4,25 @@ import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.os.bundleOf
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import androidx.fragment.app.commit
-import com.example.poo_1.R
 import androidx.fragment.app.*
-import com.example.poo_1.databinding.ActivityMainFragmentBinding
-import com.example.poo_1.fragments2.FirstFragment.Companion.ADDRESS_BUNDLE
-import com.example.poo_1.fragments2.FirstFragment.Companion.NAME_BUNDLE
+import com.example.poo_1.databinding.ActivityMainFragment2Binding
+import com.example.poo_1.fragments2.First2Fragment.Companion.ADDRESS_BUNDLE
+import com.example.poo_1.fragments2.First2Fragment.Companion.NAME_BUNDLE
 
-class MainFragmentActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainFragmentBinding
+/*  La Activity crea los datos y decide qué fragmento mostrar.
+    El Fragment recibe esos datos, los lee para mostrar el Toast
+    y dibuja la interfaz final en la pantalla.
+ */
+class MainFragment2Activity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainFragment2Binding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainFragmentBinding.inflate(layoutInflater)
+        binding = ActivityMainFragment2Binding.inflate(layoutInflater)
         enableEdgeToEdge()
         setContentView(binding.root)
 
         if (savedInstanceState == null){ // si la pantalla es nueva solamente
-            // 💡 SOLUCIÓN: Usamos la fábrica 'newInstance' del Fragment
+            // SOLUCIÓN: Usamos la fábrica 'newInstance' del Fragment
             //val fragmento = FirstFragment.newInstance("FranciscoDev", "calle 12, #17")
 
 
@@ -33,7 +33,7 @@ class MainFragmentActivity : AppCompatActivity() {
             //le decimos al supportFragmentManager que haga un cambio
             supportFragmentManager.commit {
                 setReorderingAllowed(true)
-                add<FirstFragment>(binding.fragmentContainer.id, args = bundle)
+                add<First2Fragment>(binding.fragmentContainer.id, args = bundle)
                 //add(R.id.fragmentContainer, fragmento)
             }
 

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/first3Fragment">
+
+    <fragment
+        android:id="@+id/first3Fragment"
+        android:name="com.example.poo_1.fragments3.First3Fragment"
+        android:label="fragment_first3"
+        tools:layout="@layout/fragment_first3" >
+        <action
+            android:id="@+id/action_first3Fragment_to_second3Fragment"
+            app:destination="@id/second3Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/second3Fragment"
+        android:name="com.example.poo_1.fragments3.Second3Fragment"
+        android:label="fragment_second3"
+        tools:layout="@layout/fragment_second3" >
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue="Guest" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/third3Fragment"
+        android:name="com.example.poo_1.fragments3.Third3Fragment"
+        android:label="fragment_third3"
+        tools:layout="@layout/fragment_third3" />
+
+
+</navigation>

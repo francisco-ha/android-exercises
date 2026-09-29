@@ -6,16 +6,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.example.poo_1.R
 
 
-
-/**
- * A simple [Fragment] subclass.
- * Use the [FirstFragment.newInstance] factory method to
- * create an instance of this fragment.
+/*  La Activity crea los datos y decide qué fragmento mostrar.
+    El Fragment recibe esos datos, los lee para mostrar el Toast
+    y dibuja la interfaz final en la pantalla.
  */
-class FirstFragment : Fragment() {
+class First2Fragment : Fragment() {
 
     private var name: String? = null
     private var address: String? = null
@@ -26,6 +25,7 @@ class FirstFragment : Fragment() {
             name = it.getString(NAME_BUNDLE)
             address = it.getString(ADDRESS_BUNDLE)
             Log.i("Francisco",name.orEmpty())
+            Toast.makeText(requireContext(), "Hola, $name", Toast.LENGTH_SHORT).show()
         }
 
     }
@@ -35,7 +35,7 @@ class FirstFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_first, container, false)
+        return inflater.inflate(R.layout.fragment_first2, container, false)
     }
 
     companion object {
@@ -43,7 +43,7 @@ class FirstFragment : Fragment() {
         const val ADDRESS_BUNDLE = "address_bundle"
         @JvmStatic
         fun newInstance(name: String, address: String) =
-            FirstFragment().apply {
+            First2Fragment().apply {
                 arguments = Bundle().apply { //un bundle es donde va toda la informacion que le queremos pasar al fragment
                     putString(NAME_BUNDLE, name)
                     putString(ADDRESS_BUNDLE, address)

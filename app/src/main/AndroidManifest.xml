@@ -29,7 +29,7 @@
             android:name=".flows.ui.MainFlowsActivity"
             android:exported="false" />
         <activity
-            android:name=".fragments2.MainFragmentActivity"
+            android:name=".fragments2.MainFragment2Activity"
             android:exported="false" />
         <activity
             android:name=".imagePicker.MainImageActivity"

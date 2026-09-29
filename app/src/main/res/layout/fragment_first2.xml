@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/purple"
-    tools:context=".fragments2.FirstFragment">
+    tools:context=".fragments2.First2Fragment">
 
     <!-- TODO: Update blank fragment layout -->
     <Button

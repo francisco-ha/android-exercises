@@ -8,7 +8,8 @@ import com.example.poo_1.databinding.ActivityMainBinding
 import com.example.poo_1.datePicker.DateTimePickerActivity
 import com.example.poo_1.flows.ui.MainFlowsActivity
 import com.example.poo_1.fragments.FragmentsActivity
-import com.example.poo_1.fragments2.MainFragmentActivity
+import com.example.poo_1.fragments2.MainFragment2Activity
+import com.example.poo_1.fragments3.MainFragment3Activity
 import com.example.poo_1.imagePicker.MainImageActivity
 import com.example.poo_1.location.MainLocationActivity
 import com.example.poo_1.mvvm.ui.view.MVVMActivity
@@ -43,7 +44,12 @@ class MainActivity : AppCompatActivity() {
         binding.btnFragments2.setOnClickListener { navigateToFragments2App() }
         binding.btnFlows.setOnClickListener { navigateToFlowsApp() }
         binding.btnGetUserLocation.setOnClickListener { navigateToGetUserLocation() }
+        binding.btnFragments3.setOnClickListener { navigateToFragments3App() }
 
+    }
+
+    private fun navigateToFragments3App() {
+        startActivity (Intent(this, MainFragment3Activity::class.java))
     }
 
     private fun navigateToGetUserLocation() {
@@ -55,7 +61,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun navigateToFragments2App() {
-        startActivity (Intent(this, MainFragmentActivity::class.java))
+        startActivity (Intent(this, MainFragment2Activity::class.java))
     }
 
     private fun navigateToPickImage() {

@@ -7,7 +7,7 @@ import com.example.poo_1.mvvm.data.database.entities.QuoteEntity
 
 //12:41
 
-@Database(entities = [QuoteEntity::class], version = 1)
+@Database(entities = [QuoteEntity::class], version = 1, exportSchema = false)
 abstract class QuoteDatabase: RoomDatabase() {
     abstract fun getQuoteDao(): QuoteDao
 }

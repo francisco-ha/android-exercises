@@ -3,6 +3,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
     id("com.google.dagger.hilt.android")
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -47,6 +48,7 @@ android {
 
 dependencies {
 
+
     testImplementation("junit:junit:4.12")
     // implementation -> Son librerías para el código principal de la aplicación.
     // testImplementation -> Son librerías para pruebas unitarias locales (se ejecutan en la computadora).
@@ -74,7 +76,6 @@ dependencies {
 
     //libreria para splashscreen
     implementation("androidx.core:core-splashscreen:1.0.1")
-
 
     /*retrofit*/
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
@@ -113,8 +114,16 @@ dependencies {
     /*Activity*/
     implementation("androidx.activity:activity-ktx:1.6.1")
 
+    /*Geocalizaion*/
+    implementation("com.google.android.gms:play-services-location:21.2.0")
+
     /*Desliza para actulizar*/
     //implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
+
+    /* NavComponent */
+    val navVersion = "2.7.0"
+    implementation("androidx.navigation:navigation-ui-ktx:$navVersion")
+    implementation("androidx.navigation:navigation-fragment-ktx:$navVersion")
 
     var hilt_version = "2.48"
 
